@@ -96,6 +96,14 @@ Se mantiene la idea de tocar una guitarra que no existe, pero el procesamiento s
 | **Sonido** | Sintetizado con NumPy mediante el algoritmo de cuerda pulsada **Karplus-Strong**, sin muestras grabadas. Las cuerdas entran con unos milisegundos de desfase según el sentido del rasgueo, y el timbre eléctrico se obtiene con una saturación `tanh`. Se precalculan 24 sonidos (6 acordes × 2 sentidos × 2 timbres). |
 | **Salida visual** | Cuerdas que vibran como una onda estacionaria amortiguada, un destello con el color del acorde y tres modos: *Normal*, *Neón* (contornos de Canny) y *Silueta* (primer plano de MOG2). |
 
+### Resultado
+
+![Tarea 3: demostrador Virtual Air Guitar en funcionamiento](img/tarea3.png)
+
+Demostrador en modo *Normal* con timbre acústico. La mano izquierda está sobre el segundo traste del mástil, así que se selecciona el acorde **G** (traste resaltado y círculo amarillo en la posición detectada de la mano). La mano derecha acaba de rasguear sobre el cuerpo de la guitarra, y por eso las cuerdas aparecen iluminadas.
+
+Cada traste representa un acorde completo: no se detectan los dedos por separado, sino la posición de la mano, como en la instalación original, donde la nota la elige la distancia entre las manos. Reconocer la forma real de cada acorde exigiría localizar los dedos uno a uno (por ejemplo, con los *landmarks* de MediaPipe Hands), algo que queda fuera de las técnicas de las prácticas 1 y 2.
+
 ### Uso
 
 1. Ejecuta la celda de síntesis de sonidos y después la del demostrador.
