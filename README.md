@@ -1,3 +1,5 @@
+
+
 # Práctica 2. Funciones básicas de OpenCV
 
 **Autor:** Joel Morera Apaza
@@ -98,9 +100,7 @@ Se mantiene la idea de tocar una guitarra que no existe, pero el procesamiento s
 
 ### Resultado
 
-<video src="img/download.mp4" controls muted width="640"></video>
-
-[▶ Ver vídeo de la Tarea 3: demostrador Virtual Air Guitar en funcionamiento](img/download.mp4)
+https://github.com/user-attachments/assets/5343b966-e86f-4b69-802d-681f6ea2f733
 
 Demostrador en modo *Normal* con timbre acústico. La mano izquierda está sobre el segundo traste del mástil, así que se selecciona el acorde **G** (traste resaltado y círculo amarillo en la posición detectada de la mano). La mano derecha acaba de rasguear sobre el cuerpo de la guitarra, y por eso las cuerdas aparecen iluminadas.
 
